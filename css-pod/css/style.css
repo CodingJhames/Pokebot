@@ -1,0 +1,29 @@
+
+
+p{
+    color: midnightblue;
+}
+
+#parrafo-dos{
+    background-color: skyblue;
+}
+
+.texto-20{
+    font-size: 20px;
+}
+
+.texto-32 {
+    font-size: 32px;
+}
+
+.text-white {
+    color: azure;
+}
+
+.bg-skyblue {
+    background-color: skyblue;
+}
+
+.bg-steelblue {
+    background-color: steelblue;
+}
