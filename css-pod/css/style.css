@@ -35,3 +35,114 @@ p{
 .bg-steelblue {
     background-color: steelblue;
 }
+
+/* los selectores de hermanos van a aplicar a los elementos que son hermanos y que esten por debajo del elemento de referencia */
+.hermanos-general ~ li {
+    background-color: thistle;
+}
+
+.hermanos-adyacente + li {
+    background-color: thistle;
+}
+
+/* Selectores de atributos */
+.selectores-atributos a[href] {
+    color: orangered;
+}
+
+.selectores-atributos a[target="_blank"]{
+    font-weight: bold;
+}
+
+/* El comodin del * aplica el estilo si contiene el texto en cuestión en cualquier parte*/
+.selectores-atributos a[href*="jamesmejia"]{
+    font-size: 24px;
+}
+
+/* El comodin del ^ aplica el estilo si contiene el texto en cuestión al inicio */
+.selectores-atributos a[href^="http://"]{
+    text-decoration:none;
+}
+
+/* El comodin del $ aplica el estilo si contiene el texto en cuestión al final */
+.selectores-atributos a[href$=".com"]{
+    background-color: black;
+}
+
+/* El comodin del ~ aplica el estilo si contiene el texto en cuestión en una lista separada por espacios */
+.selectores-atributos a[class~="cursos"]{
+    background-color: midnightblue;
+}
+
+/* El comodin del | aplica el estilo si contiene el texto en cuestión en una lista separada por espacios y que después del texto en cuestión venga un guión medio - */
+.selectores-atributos a[class|="menu"]{
+    font-style: italic;
+}
+
+/* Selector Universal */
+
+* {
+    font-family: sans-serif;
+}
+
+.selector-universal {
+    font-size: 24px;
+}
+
+/*  pseudoclases */
+
+.form-pseudoclases *:required {
+    border-color: yellow;
+}
+
+.form-pseudoclases *:valid {
+    border-color: green;
+}
+
+.form-pseudoclases *:invalid {
+    border-color: red;
+}
+
+.form-pseudoclases *:focus {
+    background-color: skyblue;
+}
+
+.form-pseudoclases *:disabled {
+    background-color:pink ;
+}
+
+.menu-pseudoclases a:visited {
+    color: olive;
+}
+
+.menu-pseudoclases a:hover {
+    color: orange;
+}
+
+.p-pseudoclases:hover {
+    font-size: 20px;
+}
+
+#temario-css:target {
+    background-color: lightgreen;
+}
+
+.lista-pseudoclases li:first-child {
+    color: green;
+}
+
+.lista-pseudoclases li:last-child {
+    color: violet;
+}
+
+.lista-pseudoclases li:nth-child(3) {
+    color: navy;
+}
+
+.lista-pseudoclases li:nth-child(4n) {
+    font-size: 20px;
+}
+
+.lista-pseudoclases li:nth-child(3n + 1) {
+    font-weight: bold;
+}
