@@ -146,3 +146,86 @@ p{
 .lista-pseudoclases li:nth-child(3n + 1) {
     font-weight: bold;
 }
+
+.lista-pseudoclases li:nth-child(even) {
+    background-color: yellow;
+}
+
+.lista-pseudoclases li:nth-child(odd) {
+    background-color: orange;
+}
+
+.articulo-pseudoclases p:first-of-type {
+    background-color: pink;
+}
+
+.articulo-pseudoclases p:last-of-type {
+    background-color: pink;
+}
+
+.articulo-pseudoclases p:nth-of-type(3) {
+    background-color: fuchsia;
+}
+
+.articulo-pseudoclases *:not(p) {
+    background-color: beige;
+}
+
+.saga-geminis::before {
+    content: "||";
+}
+
+.saga-geminis::after {
+    content: "||";
+}
+
+.saga-precio::before{
+    content: "$";
+    font-weight: bold;
+}
+
+.saga-precio::after {
+    content: "USD";
+    font-weight: bold;
+}
+
+.p-pseudoelementos::first-letter {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.p-pseudoelementos::first-line {
+    color: coral;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
