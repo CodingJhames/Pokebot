@@ -1,0 +1,23 @@
+
+# Ignorar archivos y directorios generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyo
+*.pyz
+*.pyw
+*.pyz
+
+# Ignorar el entorno virtual
+venv/
+env/
+*.env
+
+# Ignorar archivos generados por sistemas operativos
+.DS_Store
+Thumbs.db
+
+roms/
+
+
